@@ -1,0 +1,17 @@
+# Ignore local datasets and model paths
+storage/
+models/
+ray_results/
+xgboost_predictions/
+Others/
+*.parquet
+*.ubj
+*.json
+*.sh
+
+
+# Ignore python and IDE caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
