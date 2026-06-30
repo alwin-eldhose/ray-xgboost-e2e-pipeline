@@ -34,7 +34,15 @@ Starting from a vanilla, single-node XGBoost baseline, the codebase scales the p
 
 Follow these step-by-step instructions to set up your environment and run the notebook:
 
-### 1. Prerequisites (Install Conda/Miniforge)
+## 🚀 How to Run Locally
+
+### 1. Clone the repository:
+   ```bash
+   git clone [https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git](https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git)
+   cd YOUR_REPO_NAME
+   ```
+
+### 2. Prerequisites (Install Conda/Miniforge)
 If you do not have Conda installed, we recommend **Miniforge** (especially for macOS Apple Silicon / ARM64):
 
 ```bash
@@ -44,19 +52,19 @@ bash Miniforge3-MacOSX-arm64.sh
 ```
 Follow the prompts to complete the installation and restart your terminal.
 
-### 2. Create the Conda Environment
+### 3. Create the Conda Environment
 Create a new conda environment named `ray-jupyter` with Python 3.11:
 
 ```bash
 conda create -n ray-jupyter python=3.11 -y
 ```
 
-### 3. Activate the Environment
+### 4. Activate the Environment
 ```bash
 conda activate ray-jupyter
 ```
 
-### 4. Install dependencies using `uv`
+### 5. Install dependencies using `uv`
 For reproducibility, we use the `requirements.lock` file to install dependencies via `uv`:
 
 ```bash
@@ -69,7 +77,7 @@ uv pip install -r requirements.lock
 
 *Note: On macOS, if you encounter an `XGBoostError` during imports, you may need to run `brew install libomp` in your terminal.*
 
-### 5. Register the Conda Environment in Jupyter (Optional but Recommended)
+### 6. Register the Conda Environment in Jupyter (Optional but Recommended)
 To select your custom environment as the Jupyter kernel:
 
 ```bash
@@ -77,12 +85,12 @@ pip install ipykernel
 python -m ipykernel install --user --name ray-jupyter --display-name "Python (ray-jupyter)"
 ```
 
-### 6. Launch Jupyter Notebook
+### 7. Launch Jupyter Notebook
 ```bash
 jupyter notebook
 ```
 
-### 7. Execute the Pipeline Notebook
+### 8. Execute the Pipeline Notebook
 Open **`Intro_Ray_AI_Libs_Overview_Fresh.ipynb`** in Jupyter Notebook or VS Code, select the `Python (ray-jupyter)` kernel, and run the cells sequentially. The notebook executes:
 - Data ingestion and preparation.
 - Baseline XGBoost training.
