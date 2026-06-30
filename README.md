@@ -34,8 +34,6 @@ Starting from a vanilla, single-node XGBoost baseline, the codebase scales the p
 
 Follow these step-by-step instructions to set up your environment and run the notebook:
 
-## 🚀 How to Run Locally
-
 ### 1. Clone the repository:
    ```bash
    git clone [https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git](https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git)
