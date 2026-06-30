@@ -30,6 +30,27 @@ Starting from a vanilla, single-node XGBoost baseline, the codebase scales the p
 
 ---
 
+## 📊 Dataset Setup
+
+To keep this repository lightweight and reproducible, the raw data files are not included in the repository. 
+
+This project utilizes the June 2021, January 2021, and February 2021 files from the **New York City TLC Trip Record Data**. Before running the notebook, you must download these files and place them into your local project directory.
+
+1. **Download the required `.parquet` files:**
+   - [June 2021 Taxi Data (Main Notebook)](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-06.parquet)
+   - [January 2021 Taxi Data (Ray Train Worker 0)](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet)
+   - [February 2021 Taxi Data (Ray Train Worker 1)](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-02.parquet)
+
+2. **Organize your local directory:**
+   Place the downloaded files directly into the root folder where your Jupyter Notebook lives:
+   ```text
+   ray-xgboost-e2e-pipeline/
+   ├── Intro_Ray_AI_Libs_Overview_Fresh.ipynb
+   ├── yellow_tripdata_2021-01.parquet
+   ├── yellow_tripdata_2021-02.parquet
+   └── yellow_tripdata_2021-06.parquet
+   ```
+
 ## 🚀 How to Run It
 
 Follow these step-by-step instructions to set up your environment and run the notebook:
