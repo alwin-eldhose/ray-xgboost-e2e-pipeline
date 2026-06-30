@@ -37,7 +37,7 @@ Follow these step-by-step instructions to set up your environment and run the no
 ### 1. Clone the repository:
    ```bash
    git clone [https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git](https://github.com/alwin-eldhose/ray-xgboost-e2e-pipeline.git)
-   cd YOUR_REPO_NAME
+   cd ray-xgboost-e2e-pipeline
    ```
 
 ### 2. Prerequisites (Install Conda/Miniforge)
